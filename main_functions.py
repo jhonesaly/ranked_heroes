@@ -19,7 +19,7 @@ def random_hero_name():
     return nome.capitalize()
 
 
-def random_number(min_number, max_number):
+def random_xp(min_number, max_number):
     return random.randint(min_number, max_number)
 
 
