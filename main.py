@@ -28,6 +28,7 @@ while True:
     for heroi in herois:
         if heroi[0] == heroi_escolhido:
             heroi_na_lista = True
+            xp_heroi = heroi[1]
             break
     
     if heroi_na_lista:
@@ -35,3 +36,8 @@ while True:
 
     else:
         print("Herói inválido")
+
+## Mostrando nível do herói
+
+nivel_heroi = lvl_info(xp_heroi)
+print(nivel_heroi)
