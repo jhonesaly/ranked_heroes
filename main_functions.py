@@ -18,6 +18,10 @@ def random_hero_name():
     
     return nome.capitalize()
 
+def random_number(min_number, max_number):
+    return random.randint(min_number, max_number)
+
+
 def random_hero_league(hero_quantity):
     hero_league = []
     for i in range(hero_quantity):
@@ -25,5 +29,3 @@ def random_hero_league(hero_quantity):
 
     return hero_league
 
-def random_number(min_number, max_number):
-    return random.randint(min_number, max_number)
