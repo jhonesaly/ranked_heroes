@@ -15,3 +15,6 @@ for heroi in herois:
     print(heroi)
 
 
+## Input de herói escolhido
+
+heroi_escolhido = input("Por favor, escolha um herói da lista para saber o seu nível: ")
