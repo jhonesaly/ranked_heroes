@@ -25,5 +25,5 @@ def random_hero_league(hero_quantity):
 
     return hero_league
 
-def random_umber(min_number, max_number):
+def random_number(min_number, max_number):
     return random.randint(min_number, max_number)
