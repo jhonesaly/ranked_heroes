@@ -1,5 +1,8 @@
 # Base da aplicação
+import os
 from main_functions import *
+
+os.system('cls')
 
 herois = random_hero_league(10)
 
