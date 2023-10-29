@@ -17,3 +17,10 @@ def random_hero_name():
         nome += silaba
     
     return nome.capitalize()
+
+def random_hero_league(hero_quantity):
+    hero_league = []
+    for i in range(hero_quantity):
+        hero_league.append(random_hero_name())
+
+    return hero_league
