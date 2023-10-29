@@ -40,4 +40,4 @@ while True:
 ## Mostrando nível do herói
 
 nivel_heroi = lvl_info(xp_heroi)
-print(nivel_heroi)
+print(f"O Herói de nome **{heroi_escolhido}** está no nível de **{nivel_heroi}**")
