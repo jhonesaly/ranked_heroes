@@ -19,14 +19,16 @@ def random_hero_name():
     return nome.capitalize()
 
 
-def random_xp(min_number, max_number):
+def random_hero_xp(min_number, max_number):
     return random.randint(min_number, max_number)
 
 
 def random_hero_league(hero_quantity):
     hero_league = []
     for i in range(hero_quantity):
-        hero_league.append(random_hero_name())
+        hero_name = random_hero_name()
+        hero_xp = random_hero_xp(1,11000)
+        hero_league.append([hero_name, hero_xp])
 
     return hero_league
 
