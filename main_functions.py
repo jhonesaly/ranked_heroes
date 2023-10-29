@@ -32,3 +32,22 @@ def random_hero_league(hero_quantity):
 
     return hero_league
 
+def lvl_info(hero_xp):
+    if hero_xp < 1000:
+        return "Ferro"
+    elif 1001 <= hero_xp <= 2000:
+        return "Bronze"
+    elif 2001 <= hero_xp <= 5000:
+        return "Prata"
+    elif 5001 <= hero_xp <= 6000:
+        return "Ouro"
+    elif 6001 <= hero_xp <= 7000:
+        return "Ouro"
+    elif 7001 <= hero_xp <= 8000:
+        return "Platina"
+    elif 8001 <= hero_xp <= 9000:
+        return "Ascendente"
+    elif 9001 <= hero_xp <= 10000:
+        return "Imortal"
+    else:
+        return "Radiante"
