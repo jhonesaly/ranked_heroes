@@ -10,9 +10,9 @@ herois = random_hero_league(10)
 
 ## Listando heróis
 
-print("Bem-vindo ao ranking dos heróis!\n Os heróis disponíveis são:")
+print("Bem-vindo ao ranking dos heróis!\nOs heróis disponíveis são:")
 for heroi in herois:
-    print(heroi)
+    print(heroi[0])
 
 
 ## Input de herói escolhido
@@ -26,7 +26,7 @@ while True:
     heroi_na_lista = False
 
     for heroi in herois:
-        if heroi == heroi_escolhido:
+        if heroi[0] == heroi_escolhido:
             heroi_na_lista = True
             break
     
