@@ -18,3 +18,14 @@ for heroi in herois:
 ## Input de herói escolhido
 
 heroi_escolhido = input("Por favor, escolha um herói da lista para saber o seu nível: ")
+
+## Verifica se escolha está na lista
+
+heroi_na_lista = False
+
+for heroi in herois:
+    if heroi == heroi_escolhido:
+        heroi_na_lista = True
+        break
+
+print(heroi_na_lista)
