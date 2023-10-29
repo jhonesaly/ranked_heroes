@@ -24,3 +24,6 @@ def random_hero_league(hero_quantity):
         hero_league.append(random_hero_name())
 
     return hero_league
+
+def random_umber(min_number, max_number):
+    return random.randint(min_number, max_number)
