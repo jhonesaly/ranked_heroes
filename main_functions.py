@@ -2,6 +2,7 @@
 
 import random
 
+
 def random_hero_name():
     consoantes = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z']
     vogais = ['a', 'e', 'i', 'o', 'u']
@@ -31,6 +32,7 @@ def random_hero_league(hero_quantity):
         hero_league.append([hero_name, hero_xp])
 
     return hero_league
+
 
 def lvl_info(hero_xp):
     if hero_xp < 1000:
