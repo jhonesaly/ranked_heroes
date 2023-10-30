@@ -42,3 +42,62 @@ function lvlInfo(heroXp) {
     if (heroXp <= 9000) return "Imortal";
     return "Radiante";
 }
+
+// Base do código
+
+console.log("Bem-vindo ao ranking dos heróis!");
+let herois = randomHeroLeague(10);
+
+while (true) {
+    // Limpar a tela pode ser feito de maneiras diferentes em diferentes ambientes,
+    // então esta linha pode precisar ser modificada
+    console.clear();
+
+    // Listando heróis
+    console.log("Os heróis disponíveis são:");
+    herois.forEach(heroi => {
+        console.log(heroi[0]);
+    });
+
+    // Input de herói escolhido
+    let heroiEscolhido = prompt("Por favor, escolha um herói da lista para saber o seu nível: ");
+
+    // Verifica se escolha está na lista
+    let heroiNaLista = false;
+    let xpHeroi;
+    
+    herois.forEach(heroi => {
+        if (heroi[0] === heroiEscolhido) {
+            heroiNaLista = true;
+            xpHeroi = heroi[1];
+        }
+    });
+    
+    if (heroiNaLista) {
+        // Mostrando nível do herói
+        let nivelHeroi = lvlInfo(xpHeroi);
+        console.log(`O Herói de nome **${heroiEscolhido}** está no nível de **${nivelHeroi}**`);
+    } else {
+        console.log("Esse herói não está na lista.");
+        let novoHeroi = prompt("Deseja adicioná-lo? [s/n] ");
+        
+        if (novoHeroi.toLowerCase() === 's') {
+            let novoXp = parseInt(prompt(`Digite o xp do herói ${heroiEscolhido}: `));
+            herois.push([heroiEscolhido, novoXp]);
+            continue;
+        } else {
+            continue;
+        }
+    }
+
+    let fim = prompt("Deseja parar [s/n]? ");
+    
+    if (fim.toLowerCase() === 's') {
+        console.log("Até a próxima!");
+        break;
+    } else if (fim.toLowerCase() === 'n') {
+        console.log("Continuando...");
+    } else {
+        console.log("Resposta inválida.\nContinuando...");
+    }
+}
