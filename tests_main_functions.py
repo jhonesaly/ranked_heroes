@@ -29,3 +29,6 @@ class TestMainFunctions(unittest.TestCase):
         self.assertEqual(lvl_info(8500), "Ascendente")
         self.assertEqual(lvl_info(9500), "Imortal")
         self.assertEqual(lvl_info(10500), "Radiante")
+
+if __name__ == "__main__":
+    unittest.main()
