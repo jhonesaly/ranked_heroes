@@ -32,12 +32,23 @@ while True:
             break
     
     if heroi_na_lista:
-        break
+        ## Mostrando nível do herói
+
+        nivel_heroi = lvl_info(xp_heroi)
+        print(f"O Herói de nome **{heroi_escolhido}** está no nível de **{nivel_heroi}**")
 
     else:
         print("Herói inválido")
 
-## Mostrando nível do herói
+    fim = input("Deseja parar [s/n]? ")
+    
+    if fim.lower() == 's':
+        print("Até a próxima!")
+        break
 
-nivel_heroi = lvl_info(xp_heroi)
-print(f"O Herói de nome **{heroi_escolhido}** está no nível de **{nivel_heroi}**")
+    elif fim.lower() == 'n':
+        print("Continuando...")
+
+    else:
+        print("Resposta inválida.\nContinuando...")
+
