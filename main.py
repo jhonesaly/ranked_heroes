@@ -46,15 +46,12 @@ while True:
         else:
             continue
 
-    fim = input("Deseja parar [s/n]? ")
+    fim = input("Deseja parar [s]? ")
     
     if fim.lower() == 's':
         print("Até a próxima!")
         break
 
-    elif fim.lower() == 'n':
-        print("Continuando...")
-
     else:
-        print("Resposta inválida.\nContinuando...")
+        print("Continuando...")
 
