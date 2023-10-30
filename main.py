@@ -33,12 +33,21 @@ while True:
     
     if heroi_na_lista:
         ## Mostrando nível do herói
-
         nivel_heroi = lvl_info(xp_heroi)
         print(f"O Herói de nome **{heroi_escolhido}** está no nível de **{nivel_heroi}**")
 
     else:
-        print("Herói inválido")
+        print("Herói não está na lista.")
+        novo_heroi = input("Deseja adicionar um novo herói? [s/n] ")
+        
+        if novo_heroi.lower() == 's':
+            novo_nome = input("Digite o nome do herói: ")
+            novo_xp = int(input(f"Digite o xp do herói {novo_nome}: "))
+            herois.append([novo_nome, novo_xp])
+            
+            continue
+        else:
+            continue
 
     fim = input("Deseja parar [s/n]? ")
     
