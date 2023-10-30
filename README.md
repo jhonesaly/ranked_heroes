@@ -22,7 +22,6 @@ Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**"
 ```
 
-
 ## Estrutura do Projeto
 O projeto é dividido em três arquivos principais: `main.py`, `main_functions.py` e `tests_main_functions.py`.
 
