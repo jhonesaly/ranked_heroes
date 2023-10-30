@@ -19,3 +19,13 @@ class TestMainFunctions(unittest.TestCase):
         league = random_hero_league(hero_quantity)
         self.assertEqual(len(league), hero_quantity)  # Verifica se a quantidade de heróis é correta
 
+    def test_lvl_info(self):
+        self.assertEqual(lvl_info(500), "Ferro")
+        self.assertEqual(lvl_info(1500), "Bronze")
+        self.assertEqual(lvl_info(2500), "Prata")
+        self.assertEqual(lvl_info(5500), "Ouro")
+        self.assertEqual(lvl_info(6500), "Ouro")
+        self.assertEqual(lvl_info(7500), "Platina")
+        self.assertEqual(lvl_info(8500), "Ascendente")
+        self.assertEqual(lvl_info(9500), "Imortal")
+        self.assertEqual(lvl_info(10500), "Radiante")
